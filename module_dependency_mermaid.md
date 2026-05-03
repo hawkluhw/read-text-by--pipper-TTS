@@ -79,7 +79,7 @@ graph TB
 
     FileOps <--> AppState
     ChunkMgmt -->|chunk text| TextProc
-    TextProc -->|sentences[]| TTS
+    TextProc -->|sentences list| TTS
     AppState -.->|read/write state| TTS
     TTS -->|stdin/stdout| External
     UI -->|control| AppState
